@@ -1,11 +1,10 @@
 ---
-import Layout from "../../layouts/Layout.astro";
-import RequireAuth from "../../components/auth/RequireAuth.tsx";
-import JuradoForm from "../../components/Jurado/JuradoForm.tsx";
+import Layout from '../../layouts/Layout.astro'
 ---
 
 <Layout title="Jurado">
-  <RequireAuth client:only="react" allow="jurado">
-    <JuradoForm client:only="react" />
-  </RequireAuth>
+  <div class="container mx-auto py-12">
+    <h1 class="mb-4 text-3xl font-bold">Jurado</h1>
+    <p class="text-black/70">Vista de jurado (temporal, sin guard del lado servidor).</p>
+  </div>
 </Layout>

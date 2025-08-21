@@ -1,0 +1,18 @@
+---
+import Head from '../../components/Head.astro'
+import ProyectoDetalleJurado from '../../components/jurado/ProyectoDetalleJurado.tsx'
+import BackButton from '../../components/ui/BackButton.astro'
+import LayoutFormularios from '../../layouts/LayoutFormularios.astro'
+const { id } = Astro.params
+---
+
+<Head
+  title="Detalle del proyecto postulado | Premios Príncipe de los Páramos"
+  description="Detalle del proyecto postulado"
+/>
+<LayoutFormularios>
+  <div class="py-5">
+    <BackButton />
+  </div>
+  <ProyectoDetalleJurado client:only="react" id={id ?? ''} />
+</LayoutFormularios>

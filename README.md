@@ -147,7 +147,7 @@ El sistema maneja 17 categorías específicas:
 
 ### Middleware de Protección
 - Control de acceso basado en roles mediante cookies
-- Protección automática de rutas `/admin/*` y `/Jurado/*`
+- Protección automática de rutas `/admin/*` y `/jurado/*`
 - Redirección inteligente según permisos de usuario
 - Validación de sesión en servidor y cliente
 

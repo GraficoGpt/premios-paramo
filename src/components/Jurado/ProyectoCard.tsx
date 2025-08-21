@@ -61,7 +61,7 @@ const ProyectoCard = ({
         href={
           modo === 'admin'
             ? `/admin/proyecto/${proyecto.id}`
-            : `/Jurado/${proyecto.id}`
+            : `/jurado/${proyecto.id}`
         }
         className="bg-golddark-500 mt-4 inline-block w-full rounded-lg px-4 py-2 text-center text-white"
       >

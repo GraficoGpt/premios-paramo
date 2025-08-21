@@ -1,0 +1,10 @@
+---
+import DashboardJurado from '../../components/jurado/DashboardJurado.tsx'
+import LayoutUser from '../../layouts/LayoutUser.astro'
+---
+
+<LayoutUser>
+  <div class="container mx-auto">
+    <DashboardJurado client:load />
+  </div>
+</LayoutUser>

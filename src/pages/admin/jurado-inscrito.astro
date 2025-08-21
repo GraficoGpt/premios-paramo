@@ -1,0 +1,17 @@
+---
+import BackButton from '../../components/ui/BackButton.astro'
+import Layout from '../../layouts/Layout.astro'
+---
+
+<Layout>
+  <BackButton href="/admin/jurado" />
+  <section class="mx-auto my-10 max-w-xl rounded bg-white p-6 shadow">
+    <h1 class="mb-4 text-center text-2xl font-bold">¡Registro Exitoso!</h1>
+    <p class="text-center">El jurado ha sido registrado correctamente.</p>
+    <div class="mt-6 text-center">
+      <a href="/admin" class="bg-golddark-500 rounded-2xl px-8 py-2 text-white"
+        >Registrar otro jurado</a
+      >
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,16 @@
+---
+import RegisterJuradoForm from '../../components/admin/RegisterJurado' // o la ruta donde tengas tu componente
+import Head from '../../components/Head.astro'
+import BackButton from '../../components/ui/BackButton.astro'
+import LayoutFormularios from '../../layouts/LayoutFormularios.astro'
+---
+
+<Head title="Registro de jurados" description="Registro de jurados" />
+<LayoutFormularios>
+  <div class="mx-auto max-w-3xl py-10">
+    <div class="py-5">
+      <BackButton />
+    </div>
+    <RegisterJuradoForm client:load />
+  </div>
+</LayoutFormularios>
